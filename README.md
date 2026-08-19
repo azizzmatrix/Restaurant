@@ -95,9 +95,7 @@ This project was created as a **frontend web development project** to demonstrat
 ### Mohammed Ali Abdullah Zain
 
 * 📧 Email: [mohammedaliabdullah.zain@gmail.com]
-* 🐙 GitHub: (https://github.com/ZainCSharpdev
-
-)
+* 🐙 GitHub: (https://github.com/ZainCSharpdev)
 
 ## 📄 License
 
