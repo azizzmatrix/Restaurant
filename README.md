@@ -98,5 +98,6 @@ This project was created as a **frontend web development project** to demonstrat
 * 🐙 GitHub: (https://github.com/ZainCSharpdev)
 
 ## 📄 License
+https://azizzmatrix.github.io/Restaurant/
 
 This project is open-source and available for learning and personal use.
