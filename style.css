@@ -171,7 +171,7 @@ p {
     width: 100%;
     min-height: 100svh;
     height: 100vh;
-    background: url('Food/Editedcover.png') no-repeat center center/cover;
+    background: url('Food/Editedcover.webp') no-repeat center center/cover;
     color: var(--secondary-color);
     display: flex;
     align-items: center;
@@ -452,7 +452,7 @@ p {
     width: 100%;
     min-height: 600px;
     height: 75vh;
-    background: url(Food/Secondcover.png) no-repeat center center/cover;
+    background: url(Food/Secondcover.webp) no-repeat center center/cover;
     color: var(--secondary-color);
     display: flex;
     align-items: center;
