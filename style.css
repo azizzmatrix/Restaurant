@@ -36,6 +36,14 @@ body {
 img {
     display: block;
     max-width: 100%;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+img.loaded {
+    opacity: 1;
+    filter: blur(0);
 }
 
 button,
