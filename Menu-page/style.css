@@ -50,7 +50,7 @@ p {
 
 /* FULL MENU SECTION */
 
-.menu-btn{
+.menu-btn {
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -102,6 +102,43 @@ p {
     width: min(36rem, 70vw);
     height: 2px;
     background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+}
+
+
+.category ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 clamp(1rem, 2vw, 2rem);
+}
+
+.category ul li a {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(0.75rem, 0.9vw, 1rem);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.category ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(180, 140, 94, 0.5);
+}
+
+.category ul li a.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(180, 140, 94, 0.5);
 }
 
 /* GRID LAYOUT FOR ALL CARDS */
