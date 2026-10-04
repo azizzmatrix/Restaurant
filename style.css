@@ -1101,7 +1101,7 @@ footer {
     }
 
     .navbar .nav-links a {
-        font-size: clamp(0.58rem, 1.15vw, 0.75rem);
+        font-size: 1.5rem;
     }
 
     .hero {

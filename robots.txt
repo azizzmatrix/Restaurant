@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azizzmatrix.github.io/Restaurant/sitemap.xml
