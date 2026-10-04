@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+:root {
+--primary-color: #b48c5e;
+--primary-gradient: linear-gradient(135deg, #b48c5e 0%, #8a6336 100%);
+--secondary-color: #ffffff;
+--tertiary-color: #1a1a1a;
+--bg-dark: #090909;
+--border-glow: rgba(180, 140, 94, 0.25);
+--page-padding: clamp(1rem, 4vw, 4rem);
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+html {
+width: 100%;
+scroll-behavior: smooth;
+overflow-x: hidden;
+}
+
+body {
+width: 100%;
+min-height: 100vh;
+padding: 0;
+margin: 0;
+font-family: 'Playfair', serif;
+background-color: #000000;
+color: var(--secondary-color);
+overflow-x: hidden;
+position: relative;
+}
+
+p {
+font-family: 'Nunito', sans-serif;
+margin: 10px 0;
+}
+
+/* Back Button Alignment (Matching Story Page) */
+.story-btn {
+position: fixed;
+top: 2rem;
+left: 2rem;
+z-index: 1001;
+background: rgba(9, 9, 9, 0.8);
+border: 1px solid var(--border-glow);
+color: var(--primary-color);
+width: 48px;
+height: 48px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: all 0.3s ease;
+backdrop-filter: blur(10px);
+}
+
+.story-btn:hover {
+background: var(--primary-color);
+color: #000;
+box-shadow: 0 0 15px rgba(180, 140, 94, 0.5);
+transform: translateX(-3px);
+}
+
+.story-btn i {
+font-size: 1.8rem;
+}
+
+/* Reviews Section */
+.reviews-section {
+width: 100%;
+min-height: 100vh;
+background-color: var(--bg-dark);
+padding: clamp(5rem, 8vw, 7rem) clamp(1rem, 4vw, 4rem);
+text-align: center;
+}
+
+.section-title h4 {
+color: var(--primary-color);
+font-family: 'Nunito', sans-serif;
+font-size: clamp(0.75rem, 0.9vw, 0.95rem);
+letter-spacing: 3px;
+font-weight: 700;
+text-transform: uppercase;
+margin: 0 0 0.5rem 0;
+}
+
+.section-title h1 {
+position: relative;
+font-size: clamp(2rem, 4vw, 3.2rem);
+color: var(--secondary-color);
+margin: 0 auto clamp(2.5rem, 5vw, 4rem);
+letter-spacing: 1px;
+}
+
+.section-title h1::after {
+content: "";
+position: absolute;
+bottom: -0.75rem;
+left: 50%;
+transform: translateX(-50%);
+width: min(30rem, 60vw);
+height: 2px;
+background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+}
+
+/* Grid Layout */
+.reviews-grid {
+max-width: 1350px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+/* Review Cards */
+.content-car {
+background: rgba(0, 0, 0, 0.45);
+border: 1px solid var(--border-glow);
+border-radius: 12px;
+padding: clamp(1.5rem, 2.5vw, 2.2rem);
+text-align: left;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+backdrop-filter: blur(12px);
+}
+
+.content-car:hover {
+transform: translateY(-6px);
+border-color: var(--primary-color);
+box-shadow: 0 10px 25px rgba(180, 140, 94, 0.2);
+}
+
+.stars {
+color: var(--primary-color);
+font-size: 1.1rem;
+letter-spacing: 2px;
+margin: 0 0 1rem 0;
+}
+
+.review-text {
+font-family: 'Nunito', sans-serif;
+color: #dddddd;
+font-size: clamp(0.9rem, 1vw, 1.05rem);
+line-height: 1.6;
+margin-bottom: 1.5rem;
+flex-grow: 1;
+}
+
+.user-info {
+display: flex;
+align-items: center;
+gap: 0.8rem;
+}
+
+.user-info i {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+border: 1px solid var(--primary-color);
+color: var(--primary-color);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.2rem;
+background: rgba(180, 140, 94, 0.1);
+}
+
+.user-info h5 {
+margin: 0;
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 0.95rem;
+color: var(--secondary-color);
+}
