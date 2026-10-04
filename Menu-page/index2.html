@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu</title>
+    <title>Restaurant Menu - EMBER Kitchen & Bar</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
@@ -12,21 +12,25 @@
 <body>
     <section class="full-menu">
         <h1>OUR FULL MENU</h1>
+        
+        <!-- Category Filter Links -->
         <div class="category">
             <ul>
-                <li><a href="#" class="active">All</a></li>
-                <li><a href="#">Indian</a></li>
-                <li><a href="#">Chinese</a></li>
-                <li><a href="#">International</a></li>
+                <li><a href="#" class="category-btn active" data-filter="all">All</a></li>
+                <li><a href="#" class="category-btn" data-filter="indian">Indian</a></li>
+                <li><a href="#" class="category-btn" data-filter="chinese">Chinese</a></li>
+                <li><a href="#" class="category-btn" data-filter="international">International</a></li>
             </ul>
         </div>
+
         <button class="menu-btn" onclick="window.location.href='../index.html'">
             <i id="menu-btnicon" class="bx bx-left-arrow-alt"></i>
         </button>
 
+        <!-- Menu Grid with Categorized Items -->
         <div class="menu-grid">
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Pizza.webp" alt="Pizza">
                 <p class="badge">Signature</p>
                 <h5>SPICY CHICKEN PIZZA</h5>
@@ -34,7 +38,7 @@
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Burger Combo.webp" alt="Burger Combo">
                 <p class="badge">Signature</p>
                 <h5>DELUXE BURGER COMBO</h5>
@@ -42,15 +46,15 @@
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
-                <img loading="lazy" src="../Food/Stake.webp" alt=" Stake">
+            <div class="cards" data-category="international">
+                <img loading="lazy" src="../Food/Stake.webp" alt="Stake">
                 <p class="badge">Signature</p>
                 <h5>GRILLED BEEF STEAK</h5>
                 <p>₹599</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Biryani.webp" alt="Biryani">
                 <p class="badge">Signature</p>
                 <h5>HYDERABADI CHICKEN BIRYANI</h5>
@@ -58,161 +62,161 @@
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Samosa.webp" alt="Samosa">
                 <h5>CRISPY VEG SAMOSA</h5>
                 <p>₹79</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Cake.webp" alt="Cake">
                 <h5>CHOCOLATE TRUFFLE CAKE</h5>
                 <p>₹199</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Chai.webp" alt="Chai">
                 <h5>MASALA CHAI</h5>
                 <p>₹49</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Chicken Salad.webp" alt="Chicken Salad">
                 <h5>GRILLED CHICKEN SALAD</h5>
                 <p>₹279</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Burger.webp" alt="Burger Combo">
                 <h5>DELUXE BURGER</h5>
                 <p>₹250</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Cruson.webp" alt="Croissant">
                 <h5>BUTTER CROISSANT</h5>
                 <p>₹129</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Fruit salad.webp" alt="Fruit Salad">
                 <h5>FRESH FRUIT SALAD</h5>
                 <p>₹189</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/ICE Cream.webp" alt="Ice Cream">
                 <h5>VANILLA SUNDAE ICE CREAM</h5>
                 <p>₹149</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Indian curry.webp" alt="Indian Curry">
                 <h5>PANEER BUTTER MASALA</h5>
                 <p>₹299</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Indian-Thali.webp" alt="Indian Thali">
                 <h5>DELUXE INDIAN THALI</h5>
                 <p>₹399</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Kababs.webp" alt="Kababs">
                 <h5>CHICKEN SEEKH KABAB</h5>
                 <p>₹329</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Mandi.webp" alt="Mandi">
                 <h5>CHICKEN MANDI</h5>
                 <p>₹499</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Pav-bhaji.webp" alt="Pav Bhaji">
                 <h5>SPECIAL PAV BHAJI</h5>
                 <p>₹159</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Roasted-chicken.webp" alt="Roasted Chicken">
                 <h5>HERB ROASTED CHICKEN</h5>
                 <p>₹429</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Roll.webp" alt="Roll">
                 <h5>CHICKEN KATHI ROLL</h5>
                 <p>₹169</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Sandwich.webp" alt="Sandwich">
                 <h5>CLUB VEG SANDWICH</h5>
                 <p>₹139</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="chinese">
                 <img loading="lazy" src="../Food/Shawarma.webp" alt="Shawarma">
                 <h5>CHICKEN SHAWARMA ROLL</h5>
                 <p>₹179</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/South-indian.webp" alt="South Indian">
                 <h5>SOUTH INDIAN DOSA COMBO</h5>
                 <p>₹199</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Stawbeery-cake.webp" alt="Strawberry Cake">
                 <h5>STRAWBERRY DELIGHT CAKE</h5>
                 <p>₹219</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Sweet.webp" alt="Sweet">
                 <h5>GULAB JAMUN & SWEETS</h5>
                 <p>₹119</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Tandori-Chicken.webp" alt="Tandoori Chicken">
                 <h5>TANDOORI CHICKEN HALF</h5>
                 <p>₹349</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="indian">
                 <img loading="lazy" src="../Food/Vada-pav.webp" alt="Vada Pav">
                 <h5>MUMBAI VADA PAV</h5>
                 <p>₹69</p>
                 <button class="add-to-cart-btn">Add to Cart</button>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-category="international">
                 <img loading="lazy" src="../Food/Stake (2).webp" alt="Special Steak">
                 <h5>CHEF SPECIAL RIBEYE STEAK</h5>
                 <p>₹649</p>
@@ -221,7 +225,38 @@
 
         </div>
     </section>
+
+    <!-- Category Filtering Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const menuCards = document.querySelectorAll('.cards');
+
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    // Update active button state
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const selectedFilter = button.getAttribute('data-filter');
+
+                    // Filter menu cards
+                    menuCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+
+                        if (selectedFilter === 'all' || cardCategory === selectedFilter) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="../script.js"></script>
 </body>
-<script src="../script.js"></script>
 
 </html>
